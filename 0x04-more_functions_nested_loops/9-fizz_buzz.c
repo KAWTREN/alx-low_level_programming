@@ -26,7 +26,7 @@ int main(void)
 		}
 		else if (i == 100)
 		{
-			printf("%d\n", i);
+			printf("Buzz");
 		}
 		else
 		{
