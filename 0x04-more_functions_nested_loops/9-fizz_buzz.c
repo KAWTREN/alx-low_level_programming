@@ -14,23 +14,23 @@ int main(void)
 		k = i % 5;
 		if (j == 0 && k == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (k == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else if (j == 0)
 		{
-			printf("Fizz ");
-		}
-		else if (i == 100)
-		{
-			printf("Buzz");
+			printf("Fizz");
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+		}
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
