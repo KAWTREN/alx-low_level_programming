@@ -4,6 +4,7 @@
 /**
  * *_strdup-returns a pointer to a newly allocated space in memory
  * @str:string
+ * Return: char
  */
 char *_strdup(char *str)
 {
@@ -14,7 +15,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	len = strlen(str);
+	len = strlen(str) + 1;
 	result = malloc(sizeof(char) * len);
 	if (result == NULL)
 		return (NULL);
