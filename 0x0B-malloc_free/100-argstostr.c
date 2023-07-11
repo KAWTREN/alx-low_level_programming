@@ -9,16 +9,14 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int len, i, j, c = 0;
+	int len, i, c = 0;
 	char *result;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-			len++;
-		len++;
+		len += strlen(av[i]) + 1;
 	}
 	result = malloc(sizeof(char) * (len + 1));
 	if (result == NULL)
