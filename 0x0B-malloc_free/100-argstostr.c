@@ -28,7 +28,6 @@ char *argstostr(int ac, char **av)
 		result[c] = '\n';
 		c++;
 	}
-	result[c] = '\n';
 	return (result);
 
 }
