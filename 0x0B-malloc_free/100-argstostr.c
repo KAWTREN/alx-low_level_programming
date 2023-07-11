@@ -28,6 +28,7 @@ char *argstostr(int ac, char **av)
 		result[c] = '\n';
 		c++;
 	}
+	result[c] = '\0';
 	return (result);
 
 }
