@@ -5,16 +5,25 @@
  * *string_nconcat-concatenates two strings
  * @s1: string1
  * @s2: string2
- * @n: length of s2
+ * @n: integer
  * Return: pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	int len = 0;
+	unsigned int len1, len2;
 
-	len = strlen(s1) + 1;
-	ptr = malloc(sizeof(char) * (len + n + 1));
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	len1 = strlen(s1);
+	len2 = strlen(s2);
+	if (n >= len2)
+	{
+		n = len2;
+	}
+	ptr = malloc(sizeof(char) * (len1 + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 	strcpy(ptr, s1);
