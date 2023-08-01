@@ -9,14 +9,18 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *firstnode;
+	int data;
 
 	if (*head == NULL)
+	{
 		return (0);
+	}
 	else
 	{
 		firstnode = *head;
+		data = firstnode->n;
 		*head = firstnode->next;
 		free(firstnode);
 	}
-	return (firstnode->n);
+	return (data);
 }
