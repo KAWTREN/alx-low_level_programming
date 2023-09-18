@@ -1,7 +1,7 @@
 #ifndef main_h
 #define main_h
 
-#include <strdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int _putchar(char c);
