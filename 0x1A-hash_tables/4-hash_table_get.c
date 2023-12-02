@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     hash_node_t *crr;
 
     if (ht == NULL || key == NULL || strlen(key)== 0)
-        return (NULL);
+        return(NULL);
 
     index = key_index(( const unsigned char *)key, ht->size);
     crr = ht->array[index];
@@ -26,15 +26,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
         }
         crr = crr->next;
     }
-    return (NULL);
-}
-
-int NewFunction()
-{
-    return (NULL);
-}
-
-int NewFunction()
-{
     return (NULL);
 }
