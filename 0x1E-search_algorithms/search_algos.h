@@ -1,7 +1,8 @@
 #ifndef SEARCH_ALGOS_H
 #define SEARCH_ALGOS_H
 #define MIN(i, j) (((i) <= (j)) ? (i) : (j))
-
+#include <stddef.h>
+#include <stddef.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
